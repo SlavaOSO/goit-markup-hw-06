@@ -402,6 +402,15 @@
                     </li>
                 </ul>
             </div>
+            <form class="form-subscribe" name="subscribe">
+                <label for="email" class="subscribe-lable">Подпишитесь на рассылку</label>
+                <div class="subscribe-wrapper">
+                    <input class="subscribe-input" type="email" name="email" id="email" placeholder="E-mail" />
+                    <button type="submit" class="button">
+                        <span>Подписаться</span>
+                    </button>
+                </div>
+            </form>
         </div>
     </footer>
     <!-- Модальное окно -->
@@ -412,6 +421,41 @@
                     <use href="./img/icons.svg#icon-close-modal"></use>
                 </svg>
             </button>
+            <form class="form">
+                <b class="form-text">Оставьте свои данные, мы вам перезвоним</b>
+                <label class="label-text" for="input-name"> Имя </label>
+                <div class="wrapper-input">
+                    <input class="input" type="text" name="input-name" id="input-name" autofocus />
+                    <svg class="name-icon" width="18" height="18">
+                        <use href="./img/icons.svg#icon-name"></use>
+                    </svg>
+                </div>
+                <label class="label-text" for="input-tel">Телефон</label>
+                <div class="wrapper-input">
+                    <input class="input" type="tel" name="input-tel" id="input-tel" />
+                    <svg class="name-icon" width="18" height="18">
+                        <use href="./img/icons.svg#icon-tel"></use>
+                    </svg>
+                </div>
+                <label class="label-text" for="input-email"> Почта </label>
+                <div class="wrapper-input">
+                    <input class="input" type="email" name="input-email" id="input-email" />
+                    <svg class="name-icon" width="18" height="18">
+                        <use href="./img/icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+                <label class="label-text" for="input-textarea">Комментарий</label>
+                <textarea class="input-textarea" name="input-textarea" id="input-textarea" rows="4"
+                    placeholder="Введите текст"></textarea>
+                <div class="wrapper-checkbox">
+                    <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" />
+                    <span class="icon-check"></span>
+                    <label class="label-checkbox" for="checkbox">Соглашаюсь с рассылкой и принимаю
+                        <a class="link-checkbox" href="">Условия договора</a>
+                    </label>
+                </div>
+                <button class="submit" type="submit">Отправить</button>
+            </form>
         </div>
     </div>
     <!-- Cкрипт модального окна -->
